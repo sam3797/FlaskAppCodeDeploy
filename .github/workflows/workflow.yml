@@ -48,4 +48,4 @@ jobs:
             --application-name code-deploy \
             --deployment-group-name Deployment-group \
             --deployment-config-name CodeDeployDefault.AllAtOnce \
-            --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
+            --github-location repository=sam3797/FlaskAppCodeDeploy,commitId=fb95a52f939897a6666010e3658da3f65ab0e5c4
