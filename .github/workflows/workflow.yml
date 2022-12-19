@@ -45,7 +45,7 @@ jobs:
         run: |
           # Assuming the Deployment Group is already setup
           aws deploy create-deployment \
-            --application-name blue-green-app \
-            --deployment-group-name blue-gree-deploy-group \
-            --deployment-config-name CodeDeployDefault.OneAtATime \
+            --application-name sampath \
+            --deployment-group-name sampath-deploy-group \
+            --deployment-config-name CodeDeployDefault.AllAtOnce \
              --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
