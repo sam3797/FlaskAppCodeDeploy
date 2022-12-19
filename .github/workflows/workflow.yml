@@ -4,7 +4,7 @@ on:
     branches: [ master ]
 jobs:
   continuous-integration:
-    runs-on: linux
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
@@ -29,7 +29,7 @@ jobs:
         run: python run.py & pytest
 
   continuous-deployment:
-    runs-on: linux
+    runs-on: ubuntu-latest
     needs: [continuous-integration]
     if: github.ref == 'refs/heads/main'
     steps:
