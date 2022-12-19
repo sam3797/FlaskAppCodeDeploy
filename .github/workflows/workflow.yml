@@ -47,5 +47,5 @@ jobs:
           aws deploy create-deployment \
             --application-name blue-app \
             --deployment-group-name blue-deploy \
-            --deployment-config-name CodeDeployDefault.AllAtOnce \
+            --deployment-config-name CodeDeployDefault.OneAtATime \
              --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
